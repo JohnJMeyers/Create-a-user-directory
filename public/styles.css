@@ -1,0 +1,116 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: sans-serif;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.anchor {
+  flex-basis: 24%;
+  padding: 1%;
+  text-decoration: none;
+  color: black;
+}
+.user-block {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+.user-block:hover {
+  border: 1px solid red;
+}
+.avatar {
+  margin-bottom: 4%;
+  align-self: center;
+  max-width: 30vw;
+  max-height: 30vh;
+}
+.userName {
+  font-weight: bold;
+  margin-bottom: 4%;
+  color: #58AFE8;
+  font-size: 170%;
+  max-width: 30vw;
+
+}
+.job {
+  margin-bottom: 4%;
+  max-width: 30vw;
+}
+.forHire {
+  font-size: 90%;
+  color: #FF592E;
+  margin-bottom: 4%;
+  max-width: 30vw;
+}
+/* ------------------------ */
+.user-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15%;
+}
+.avatar-box {
+  display: flex;
+  flex-direction: column;
+
+}
+.avatar-round {
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  width: 18vw;
+  margin-bottom: 8%;
+
+}
+.education {
+  align-self: flex-end;
+  font-size: 130%;
+  margin-bottom: 5%;
+
+}
+.skills {
+  align-self: flex-end;
+  font-size: 130%;
+  margin-bottom: 5%;
+}
+.info-box {
+  margin-top: 5%;
+  margin-left: 3%;
+}
+.info-text {
+  margin-bottom: 5%;
+}
+.info-name {
+  font-size: 500%;
+  font-weight: lighter;
+  margin-bottom: 4%;
+}
+.info-address1 {
+  font-size: 110%;
+  margin-bottom: 1%;
+}
+.info-address2 {
+  font-size: 110%;
+}
+.info-education{
+  padding-top: 22%;
+}
+.university {
+  margin-bottom: 5%;
+}
+#skill {
+  margin-bottom: 2%;
+}
