@@ -66,20 +66,17 @@
 .avatar-box {
   display: flex;
   flex-direction: column;
-
 }
 .avatar-round {
   border: 1px solid lightgrey;
   border-radius: 50%;
   width: 18vw;
   margin-bottom: 8%;
-
 }
 .education {
   align-self: flex-end;
   font-size: 130%;
   margin-bottom: 5%;
-
 }
 .skills {
   align-self: flex-end;

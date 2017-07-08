@@ -7,9 +7,10 @@
   </head>
   </head>
   <body>
-
     <main class='user-main'>
+
       {{#users}}
+
         <section class='avatar-box'>
           <img class='avatar-round' src="{{avatar}}" alt="">
           <h5 class='education'><strong>Education</strong></h5>
@@ -23,13 +24,18 @@
           </div>
           <div class="info-education">
             <p class='university'>{{#university}} {{university}} {{/university}} {{^university}}{{/university}}</p>
+
             {{#skills}}
+
               <p id='skill'>{{.}}</p>
+
             {{/skills}}
+
           </div>
         </section>
-      {{/users}}
-    </main>
 
+      {{/users}}
+
+    </main>
   </body>
 </html>

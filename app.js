@@ -1,24 +1,15 @@
-const express = require('express');
-const app = express();
+const superAwesomeRoutes = require('./routes/routes.js')
 const mustacheExpress = require('mustache-express')
-const dataFile = require("./data")
+const dataFile = require("./models/data")
+const express = require('express')
+const app = express();
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'))
+app.use(superAwesomeRoutes);
 
-app.engine('mustache', mustacheExpress());
+app.engine('mustache', mustacheExpress())
+
 app.set('view engine', 'mustache')
-
-
-app.get("/", function (req, res) {
-  res.render("index", {users: dataFile.users});
-});
-
-
-app.get("/:userId", function (req, res) {
-  var userId = req.params.userId - 1;
- res.render('user-profile', {users: dataFile.users[userId]});
-})
-
 
 app.listen(3000, function () {
   console.log('Successfully started express application!')
